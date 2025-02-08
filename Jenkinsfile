@@ -5,6 +5,7 @@ pipeline {
         stage('Checkout Code') {
             steps {
                 git branch: 'master', url: 'https://github.com/mahgoub/Hadoop.git'
+                echo "Checking out code..."
             }
         }
 
